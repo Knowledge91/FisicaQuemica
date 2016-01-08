@@ -10,8 +10,3 @@
 \contentsline {subsubsection}{3.}{8}
 \contentsline {subsubsection}{4.}{8}
 \contentsline {subsubsection}{5.}{9}
-\contentsline {chapter}{\numberline {2}Variational Principle and Lagrange's Equations}{10}
-\contentsline {section}{\numberline {2.1}Hamilton principle}{10}
-\contentsline {section}{\numberline {2.2}Lagrange's Equation from the Action Integral}{11}
-\contentsline {section}{\numberline {2.3}Exercise}{12}
-\contentsline {section}{\numberline {2.4}solution}{12}
