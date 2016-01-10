@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.4)  8 JAN 2016 11:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.4)  10 JAN 2016 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -114,7 +114,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(./mechanics.aux (./Chapters/dAlembertPrinciple.aux) (./hamiltonPrinciple.aux))
+(./mechanics.aux)
 \openout1 = `mechanics.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -129,6 +129,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
+
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count101
@@ -197,15 +198,11 @@ e
 \tf@toc=\write3
 \openout3 = `mechanics.toc'.
 
- [1
+ (./Chapters/dAlembertPrinciple.tex [1
 
 ]
-\openout2 = `Chapters/dAlembertPrinciple.aux'.
-
- (./Chapters/dAlembertPrinciple.tex
 Chapter 1.
 [2
-
 
 ] [3] [4]
 Overfull \hbox (13.07234pt too wide) in paragraph at lines 147--151
@@ -213,17 +210,14 @@ Overfull \hbox (13.07234pt too wide) in paragraph at lines 147--151
 q. (1.15[]) in \OT1/cmr/m/it/10 d'Alembert's
  []
 
-[5] <images/exercises_1_1.png, id=38, 911.405pt x 608.2725pt>
+[5] <images/exercises_1_1.png, id=39, 911.405pt x 608.2725pt>
 File: images/exercises_1_1.png Graphic file (type png)
 
 <use images/exercises_1_1.png>
-Package pdftex.def Info: images/exercises_1_1.png used on input line 222.
+Package pdftex.def Info: images/exercises_1_1.png used on input line 220.
 (pdftex.def)             Requested size: 172.5pt x 115.12746pt.
  [6 <./images/exercises_1_1.png>] [7] [8])
-[9]
-\openout2 = `hamiltonPrinciple.aux'.
-
- (./hamiltonPrinciple.tex
+(./Chapters/hamiltonPrinciple.tex [9]
 Chapter 2.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
@@ -233,45 +227,82 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
  [10
 
-
-
 ] [11]
-[12] [13] (./mechanics.aux (./Chapters/dAlembertPrinciple.aux)
-(./hamiltonPrinciple.aux)) ) )
-(\end occurred when \iftrue on line 17 was incomplete)
-(\end occurred when \ifnum on line 17 was incomplete) 
+[12]) (./Chapters/hamiltonMechanic.tex [13]
+Chapter 3.
+[14
+
+]
+Overfull \hbox (10.59789pt too wide) in paragraph at lines 57--57
+[]\OT1/cmr/bx/n/14.4 The Hamil-ton Func-tion and Hamit-lon's Equa-
+ []
+
+[15]
+Overfull \hbox (37.98877pt too wide) detected at line 131
+\OML/cmm/m/it/10 ^^NS\OT1/cmr/m/n/10 [\OT1/cmr/bx/n/10 q\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 t\OT1/cmr/m/n/10 )]  =  \OML/cmm/m/it/10 ^^N [][] L\OT1/cmr/m/n/10 (
+\OT1/cmr/bx/n/10 q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/
+m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/1
+0 ; t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt  \OT1/cmr/m/n/10 =  0  \OMS/cmsy/m/n/
+10 )  \OML/cmm/m/it/10 ^^NS\OT1/cmr/m/n/10 [\OT1/cmr/bx/n/10 q\OT1/cmr/m/n/10 (
+\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/bx/n/10 p\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )]  =  [][] \OT1/cmr/bx/n/10 p[] \O
+MS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 q\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/bx/n/1
+0 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 dt
+ []
+
+[16]
+
+LaTeX Warning: Reference `canonicalTransformationCondition' on page 17 undefine
+d on input line 165.
+
+
+LaTeX Warning: Reference `transformationEquations' on page 17 undefined on inpu
+t line 183.
+
+) [17] [18] (./mechanics.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2175 strings out of 493117
- 29657 string characters out of 6135434
- 97960 words of memory out of 5000000
- 5601 multiletter control sequences out of 15000+600000
- 12173 words of font info for 43 fonts, out of 8000000 for 9000
+ 2172 strings out of 493117
+ 29596 string characters out of 6135434
+ 97711 words of memory out of 5000000
+ 5603 multiletter control sequences out of 15000+600000
+ 11866 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,12n,23p,235b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti8.pfb>
-Output written on mechanics.pdf (14 pages, 279916 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on mechanics.pdf (19 pages, 317097 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

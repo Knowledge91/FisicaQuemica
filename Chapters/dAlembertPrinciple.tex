@@ -3,13 +3,14 @@ In classical mechanic problems were described by Newtons 3N\footnote{Each of
 the N particles has three degrees in a three dimensional space.} differential
 equations\footnote{Also called equations of motion.} of 2nd order 
 \begin{equation}
-  m_i \ddot{\vec r_i} \,=\, \vec F_i^{(e)} \sum_{i \neq j} \vec F_{ij},
+  m_i \ddot{\vec r_i} \,=\, \vec F_i^{(e)} + \sum_{i \neq j} \vec F_{ij},
 \end{equation}
 where $\vec F^{(e)}$ denotes the external force and $F_{ij}$ the internal forces
 acting on the system. As many systems contain a lot of particles the Newton
-approach gets very unhandy, leading to the easier to handle \textit{D'Alembert's
-principle} and \textit{Lagrange equations}. First step to develop these new
-technics is to introduce \textit{constraints}. 
+approach gets very unhandy, thus leading to the introduction of \textit{D'Alembert's
+principle} and \textit{Lagrange equations}. First step to develop to develop a
+new, more elegant, way of solving mechanical problems is given by
+\textit{constraints}.
 
 \section{Constraints}
 Many systems underly forces of constraints, which can be denoted as 
@@ -30,7 +31,7 @@ coordinates}. Due to the forces of constraints some of the cartesian coordinates
 r_i$ are now linearly dependent, hence the \textit{equations of motion} are not
 all independent. To get the full advantage of using constraints we have to
 introduce \textit{generalized coordinates}. Meaning that we can choose S
-totally arbitraily coordinates, which just have to be linearly
+totally arbitraily coordinates $q_1, \cdots, q_S)$, which just have to be linearly
 independent to describe our N particle system completly. 
 
 The only problem that is left is, that \textit{forces of constraints} are
@@ -40,22 +41,22 @@ done with \textit{D'Alembert's principle}.
 
 \section{D'Alembert's principle}
 To derive \textit{D'Alembert's principle} we have to introduce the virtual
-displacements $delta \vec r$. Virtual displacements is an \textbf{assumed}
+displacements $\delta \vec r$. Virtual displacements is an \textbf{assumed}
 infinitesimal change of system coordinates occuring while \textbf{time is held
 constant}\footnote{Virtual displacements cannot take part in our real world
 because time is held constant, there is no movement without time. That's why
 the displacement is called virtual.}. Apart from that virtual displacement are
 mathematically treated as a normal displacement $d \vec r$. 
 
-Regarding a system equilibrium, we know that the \textit{total
-force}\footnote{External and internal force on a particle.} on each particle
-vanishes $\vec F_i \,=\, 0$. Furthermore the classical work is given by $dW
-\,=\, \vec F \cdot d \vec r$, thus we can define the virtual work as
+With the \textit{virtual displacement} in mind we can define a \textit{virtual
+work}\footnote{Almost the same as the classical work $dW \,=\, \vec F \cdot d \vec r$.}
 \begin{equation}
   \delta W \,=\, \vec F \cdot \delta \vec r.
 \end{equation}
-Consequently, due to the vanishing total force, the sum over the total virtual
-work must also vanish
+Regarding a system equilibrium, we know that the \textit{total
+force}\footnote{External and internal force on a particle.} on each particle
+vanishes $\vec F_i \,=\, 0$. Thus for a system in equilibrium the
+\textit{net virtual work}\footnote{Net work: sum over work of N particles.} is given by
 \begin{equation}
   \label{netVirtualWork}
   \sum_{i} \vec F_i \cdot \delta \vec r \,=\, 0.
@@ -64,12 +65,12 @@ To obtain \textit{D'Alemberts principle} we can now split up the total force
 $\vec F_i$ into so called \textit{applied forces} $F^{(a)}$ \footnote{Simply all forces, but the
 forces of constraint.} and the \textit{forces of constraint} $f$
 \begin{equation}
-  \vec F \,=\, \vec F^{(a)} + \vec f \quad \Rightarrow \quad \vec F^{(a)} +
-\vec f - \vec F \,=\, 0 
+  \vec F \,=\, \dot{\vec p} \,=\, \vec F^{(a)} + \vec f \quad \Rightarrow \quad
+(\vec F^{(a)} - \dot{\vec p}) + \vec f \,=\, 0 
 \end{equation}
-Thus we can write for the net virtual work eq.~(\ref{netVirtualWork})
+Thus we can rewrite the \textit{net virtual work} eq.~(\ref{netVirtualWork})
 \begin{equation}
-  \sum_{i} (\vec F_i^{(a)} - \vec F_i) \cdot \delta \vec r + \sum_{i} \vec f_i \cdot \delta \vec r
+  \sum_{i} (\vec F_i^{(a)} - \dot{\vec p}_i) \cdot \delta \vec r + \sum_{i} \vec f_i \cdot \delta \vec r
 \,=\, 0
 \end{equation}
 Now we seperated the \textit{forces of constraints} from the applied forces and
@@ -84,11 +85,10 @@ with
 \begin{equation}
   \label{dAlembertPrinciple}
   \sum_{i} (\vec F_i^{(a)} - \dot{\vec p_i}) \cdot \delta \vec r \,=\, 0 \quad
-\text{with} \quad \vec F \,=\, m \ddot{\vec r} \,=\, \dot{\vec p},
 \end{equation}
 which is referred to as \textit{D'Alembert's princple}.
 
-Having achieved our aim to cause to vanish the forces of constraints we still
+Having achieved our aim to disperse the forces of constraints we still
 are left with linearly dependent virtual displacements $\delta \vec
 r$\footnote{The cartesian coordinates $\vec r$ have been linearly dependent,
 due to the forces of constraint, and so are $\delta \vec r$.}. As before we
@@ -123,8 +123,8 @@ where we defined the \textit{generalized force} $Q_j$
 Before evaluating the second term, we need to introduce to
 idendities, which we are not going to derive here\footnote{We already derived these in our first exercise sheet.} :
 \begin{align}
-  \frac{\vec r_i}{q_j} \,=\,& \frac{\dot{\vec r}}{\dot{q_j}} \\
-  \frac{d}{dt} \frac{\vec r_i}{q_j} \,=\,& \frac{\dot{\vec r_i}}{q_j}
+  \frac{\partial \vec r_i}{\partial q_j} \,=\,& \frac{\partial \dot{\vec r}}{\partial \dot{q_j}} \\
+  \frac{d}{dt} \frac{\partial \vec r_i}{\partial q_j} \,=\,& \frac{\partial \dot{\vec r_i}}{\partial q_j}
 \end{align}
 With these two identities we are able to evaluate the second expression
 \begin{equation}
@@ -182,7 +182,7 @@ eq.~(\ref{generalizedForce})
 \begin{equation}
   Q_j \,=\, \sum_i \vec F_i \frac{\partial \vec r_i}{\partial q_j} \,=\,
 - \sum_i \nabla_i V \frac{\partial \vec r_i}{\partial q_j} \,=\,
--\frac{V}{q_j}, 
+-\frac{\partial V}{\partial q_j}, 
 \end{equation}
 because $\nabla_i \cdot \partial \vec r_i$ cancel out.
 
@@ -214,9 +214,7 @@ and force, as we have been used from the newton mechanic. We now have to deal
 with S differential equations of 2nd order. Consequently 2S initial editions
 are needed to solve for the \textit{equations of motions}.
 
-\section{Exercise}
-
-\subsection{Task}
+\section{Example}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{images/exercises_1_1.png}
@@ -238,8 +236,6 @@ motion
     to get the equations of motion.
   \item Solve the problem with classical Newton mechanics.
 \end{enumerate}
-
-\subsection{Solution}
 \subsubsection{1.} 
 The constraints are given by
 \begin{align*}
