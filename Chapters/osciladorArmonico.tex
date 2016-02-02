@@ -1,0 +1,46 @@
+\chapter{Oscilador Armónico Cuántico}
+
+\section{Problemas}
+
+\begin{enumerate}
+
+\item Ecuentra las expressiones del los observables $x$ y $p$ en términos de los
+operadores $a$ y $a^\dagger$ que permiten escribir l'hamiltoniano armónico
+unidimensional como $H = \hbar \omega (a^\dagger a + 1/2)$. Conviene que
+utilizas argumentos d'hermitinidad y dimensional.	\\\\
+\textbf{Solucion:} \\
+Los operadores escalera estan definida por
+\begin{align*}
+	a \,=\,& \sqrt{\frac{m\omega}{2 \hbar}} \left( \hat x + \frac{i}{m \omega} \hat p
+\right)	\\
+	a^\dagger \,=\,& \sqrt{\frac{m\omega}{2 \hbar}} \left( \hat x + \frac{i}{m \omega}
+\hat p\right)
+\end{align*}
+Así añadiendo y sustraiendo los operadores escalar danos
+\begin{align*}
+	a + a^\dagger \,=\,& \sqrt{\frac{m \omega}{2 \hbar}} ( \hat x + \hat x) &
+\Rightarrow \quad \hat x \,=\, \sqrt{\frac{\hbar }{2 m \omega}} (a + a^\dagger) \\
+	a - a^\dagger \,=\,& \sqrt{\frac{m \omega}{2 \hbar}} \left(\frac{i}{m
+\omega} \hat p + \frac{i}{m \omega} \hat p \right) & \Rightarrow \quad \hat p
+\,=\, \sqrt{\frac{\hbar m \omega}{2}} (-i) (a - a^\dagger)
+\end{align*}
+Ahora vamos a comprobar la dimensionalidad. En general los unidades utilizados
+para los operadores escalares estan
+\begin{align*}
+	m \,=\, kg \quad \omega \,=\, \sqrt{\frac{k}{m}} \,=\, \frac{1}{s} \quad h
+\,=\, \frac{kg \cdot m^2}{s},
+\end{align*}
+porque $h = J\cdot s = N \cdot m \cdot s$ y $k = N / m = kg / s$. Así que la
+comproba de $\hat x$
+\begin{equation*}
+	\hat x \,=\, \sqrt{\frac{h}{m \omega}} \,=\, \sqrt{\frac{kg \cdot m^2}{s} 
+\cdot kg^{-1} \cdot s} \,=\, m
+\end{equation*}
+y de $\hat p$
+\begin{equation*}
+	\hat p \,=\, \sqrt{h m \omega} \,=\, \sqrt{\frac{kg \cdot m^2}{s} \cdot kg
+\cdot s^{-1}} \,=\, \frac{kg \cdot m}{s}
+\end{equation*}
+donde hemos mirado solo términos importantes, estan hecho facilmente
+\end{enumerate}
+
