@@ -1,3 +1,4 @@
+\select@language {spanish}
 \contentsline {chapter}{\numberline {1}Los postulados de la mecánica cuántica}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Estados Puros}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Observables}{2}{section.1.2}

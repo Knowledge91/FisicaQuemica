@@ -11,17 +11,17 @@ utilizas argumentos d'hermitinidad y dimensional.	\\\\
 \textbf{Solucion:} \\
 Los operadores escalera estan definida por
 \begin{align*}
-	a \,=\,& \sqrt{\frac{m\omega}{2 \hbar}} \left( \hat x + \frac{i}{m \omega} \hat p
+	a \,=\, \sqrt{\frac{m\omega}{2 \hbar}} \left( \hat x + \frac{i}{m \omega} \hat p
 \right)	\\
-	a^\dagger \,=\,& \sqrt{\frac{m\omega}{2 \hbar}} \left( \hat x + \frac{i}{m \omega}
+	a^\dagger \,=\, \sqrt{\frac{m\omega}{2 \hbar}} \left( \hat x - \frac{i}{m \omega}
 \hat p\right)
 \end{align*}
 Así añadiendo y sustraiendo los operadores escalar danos
 \begin{align*}
-	a + a^\dagger \,=\,& \sqrt{\frac{m \omega}{2 \hbar}} ( \hat x + \hat x) &
+	a + a^\dagger \,=\,a \sqrt{\frac{m \omega}{2 \hbar}} ( \hat x + \hat x) &
 \Rightarrow \quad \hat x \,=\, \sqrt{\frac{\hbar }{2 m \omega}} (a + a^\dagger) \\
-	a - a^\dagger \,=\,& \sqrt{\frac{m \omega}{2 \hbar}} \left(\frac{i}{m
-\omega} \hat p + \frac{i}{m \omega} \hat p \right) & \Rightarrow \quad \hat p
+	a - a^\dagger \,=\,a \sqrt{\frac{m \omega}{2 \hbar}} \left(\frac{i}{m
+\omega} \hat p + \frac{i}{m \omega} \hat p \right) a \Rightarrow \quad \hat p
 \,=\, \sqrt{\frac{\hbar m \omega}{2}} (-i) (a - a^\dagger)
 \end{align*}
 Ahora vamos a comprobar la dimensionalidad. En general los unidades utilizados
@@ -41,6 +41,104 @@ y de $\hat p$
 	\hat p \,=\, \sqrt{h m \omega} \,=\, \sqrt{\frac{kg \cdot m^2}{s} \cdot kg
 \cdot s^{-1}} \,=\, \frac{kg \cdot m}{s}
 \end{equation*}
-donde hemos mirado solo términos importantes, estan hecho facilmente
+donde hemos mirado solo términos importantes, estan hecho facilmente.
+
+\item Utilza los operadores escalar $a$ y $a^\dagger$ para calcular los valores
+esperados $\langle x \rangle_n$, $\langle p \rangle_n$, $\langle x^2 \rangle_n$,
+$\langle p^2 \rangle_n$, $\langle K \rangle_n$, $\langle V \rangle_n$ y los
+indeterminaciónes $\langle (\Delta x)^2 \rangle_n$, $\langle(\Delta p)^2\rangle_n$ y
+$\langle(\Delta H)^2\rangle_n$ de el estado
+estacionario $|n\rangle$ de l'oscilador armónico unidimensional. \\\\
+\textbf{Solucion:}\\
+Recuerdando que los vectores del estado estan orthogonales
+\begin{equation*}
+	\langle n | n' \rangle \,=\, \delta_{nn'}
+\end{equation*}
+nos podemos calcular $\langle \hat x \rangle_n$ y $\langle \hat p \rangle_n$
+facilmente 
+\begin{align*}
+	\langle \hat x \rangle_n a= \langle n | \hat x | n \rangle =
+\sqrt{\frac{\hbar}{2m\omega}} \langle n| a^\dagger + a | n \rangle 
+	= \sqrt{\frac{\hbar}{2m\omega}} (\langle n | a^\dagger | \rangle +
+\langle n | a | n \rangle ) \\
+	a = \sqrt{\frac{\hbar}{2m\omega}} (\sqrt{n+1} \langle
+n| n+1\rangle + \sqrt{n} \langle n|n-1\rangle) = 0,\\
+	\langle \hat p \rangle_n a= \sqrt{\frac{\hbar}{2m\omega}} (-i) \langle n |
+(a - a^\dagger) | n \rangle = 0.
+\end{align*}
+Utilizando el operador número $N = a^\dagger a$ y el commutador de los
+operadores escalar
+\begin{equation*}
+	[a, a^\dagger] = aa^\dagger - a^\dagger a = 1 \quad \Rightarrow \qquad a
+a^\dagger = a^\dagger a + 1 = \hat N + 1	
+\end{equation*}
+danos las valores esperados de $\langle \hat x^2 \rangle_n$ y $\langle \hat p^2
+\rangle_n$
+\begin{align*}
+	\langle \hat x^2 \rangle_n a= \langle n | \hat x^2 | n \rangle =
+\frac{\hbar}{2m\omega} (\langle n | \cancel{a^\dagger a^\dagger} +
+\underbrace{a^\dagger a}_{\hat N} + \underbrace{aa^\dagger}_{\hat N + 1} +
+\cancel{aa} | n\rangle  \\
+	a= \frac{\hbar}{2m\omega} (\langle n | 2 \hat N + 1 | n \rangle =
+\frac{\hbar}{2m\omega} (2n +1) = \frac{\hbar}{m\omega}
+\left(n+\frac{1}{2}\right) \\
+	\langle \hat p^2 \rangle_n a= -\frac{\hbar m \omega}{2} [-(2n +1] =
+\frac{\hbar m \omega}{2} (2n + 1) = \hbar m \omega (n + \frac{1}{2}).	
+\end{align*}
+Los valores esperados kintetico $\langle K \rangle_n$ y potencial $\langle V
+\rangle_n$ estan compuesto de los valores esperados calculado antes, por lo
+tanto nos podemos escribir
+\begin{align*}
+	\langle K \rangle_n a= \frac{1}{2m} \langle \hat p^2 \rangle_n \frac{\hbar
+\omega}{2} \left( n \frac{1}{2} \right) \\
+	\langle V \rangle_n a=  \frac{1}{2} m \omega^2 \langle x^2 \rangle_n =
+\frac{1}{2} \hbar \omega \left( n + \frac{1}{2} \right)
+\end{align*}
+Por esto $\langle H \rangle_n$  esta dado por
+\begin{equation*}
+	\langle H \rangle_n = \langle K \rangle_n + \langle V \rangle_n = \hbar
+\omega \left( n + \frac{1}{2} \right).
+\end{equation*}
+Por los indeterminaviones nos recuerdamos de la relación de indeterminación
+\begin{equation*}
+	\Delta A \equiv A - \langle A \rangle \quad \Rightarrow \qquad \langle
+(\Delta A)^2 \rangle = \langle A^2 \rangle - \langle A \rangle^2
+\end{equation*}
+Así los indeterminaciones estan dado por
+\begin{align*}
+	\langle (\Delta x)^2 \rangle_n a= \langle x^2 \rangle_n -
+\underbrace{\langle x \rangle_n}_0 = \frac{\hbar}{m\omega} \left( n +
+\frac{1}{2}\right) \\
+	\langle (\Delta p)^2 \rangle_n a= \langle p^2 \rangle_n -
+\underbrace{\langle p \rangle_n}_0 = \hbar m \omega \left(n + \frac{1}{2}
+\right) \\
+	\langle (\Delta H)^2 \rangle_n = \langle H^2 \rangle_n - \langle H
+\rangle_n^2 = 0
+\end{align*}
+El ultimo realción esta verdad porque dando un Hamiltoniano armónico
+\begin{equation*}
+	H = \frac{1}{2m} p^2 + \frac{1}{2} m \omega^2 x^2 \quad \Rightarrow \qquad
+H^2 = \frac{1}{4m^2} \underbrace{p^4}_{(a-a^\dagger)^4} + \frac{1}{4} m^2
+\omega^2 \underbrace{x^4}_{(a+a^\dagger)^4}
+\end{equation*}
+así considerado solo $x^4$
+\begin{equation*}
+	\langle x^4 \rangle_n = \langle n |(a+a^\dagger)^4 | n \rangle = \langle n |(\cancel{aa} + aa^\dagger + a^\dagger a + \cancel{a^\dagger
+a^\dagger})^2 | n \rangle = \langle n |(aa^\dagger + a^\dagger a)^2 | n \rangle
+= \langle n | ( a a^\dagger + a^\dagger a) | n \rangle^2  
+\end{equation*}
+repitiendo el mismo processo por $p^4$ danos como resultado
+\begin{equation*}
+	\langle H^2 \rangle_n = \langle H \rangle_n^2
+\end{equation*}
+por lo tanto vemos que la indeterminacion del Hamiltoniano esta cero.
+
+\item Dada la function d'onda de l'estado fundamental del oscilador armónico
+unidimenional
+\begin{equation*}
+	\phi_0 (x) = \left(\frac{m\omega}{\pi \hbar}\right)^{\frac{1}{4}} e^{-\frac{1}{2}
+\frac{m\omega}{\hbar} x^2}
+\end{equation*}
+ecuentre l'expresion de $\phi_2(x)$.
 \end{enumerate}
 
