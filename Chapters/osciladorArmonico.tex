@@ -133,12 +133,104 @@ repitiendo el mismo processo por $p^4$ danos como resultado
 \end{equation*}
 por lo tanto vemos que la indeterminacion del Hamiltoniano esta cero.
 
-\item Dada la function d'onda de l'estado fundamental del oscilador armónico
+\item por el estado no estacionario inicial (y sencillo) $|\psi(t=0)\rangle =
+\frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}} | 1 \rangle$ y cualquier
+instant de tiempo t. \\\\
+\textbf{Solucion:} \\
+Primero tenemos que evaluar la evolución del tiempo del estado no esacionario
+inicial. Por lo tanto deberiamos calcular la energía del oscillador armónico
+del estado fundamental y primero estado
+\begin{equation*}
+	E_n = \hbar \omega (n + \frac{1}{2}), \quad E_0 = \frac{\hbar \omega}{2}
+,\quad E_1 = \frac{3 \hbar \omega}{2}.
+\end{equation*}
+Así utilizando
+\begin{equation*}
+	|\alpha (t)\rangle = \sum_n \alpha_n e^{-i\frac{E_n}{\hbar} t} | n\rangle
+\end{equation*}
+danos la evolución temporal de $|\psi(t=0)\rangle$ 
+\begin{equation*}
+	|\psi(t)\rangle = \frac{1}{\sqrt{2}} e^{-\frac{i\omega}{2}}|0\rangle
++ \frac{1}{\sqrt{2}} e^{-\frac{3 i \omega t}{2}} |1 \rangle  = \frac{1}{\sqrt{2}}
+e^{-\frac{i\omega t}{2}} \left( |0\rangle + e^{\frac{i \omega t}{2}} |
+2\rangle \right)
+\end{equation*}
+Logicamente por los valores eseperados nos tenemos
+\begin{align*}
+	\langle \hat x \rangle_{\psi(t)} &= \langle \psi | \hat x | \psi \rangle \\
+	&= \frac{1}{2} \cancel{e^{\frac{- i \omega t}{2}}e^{\frac{i \omega t}{2}}}
+\frac{\hbar}{2m\omega} \left( \langle 0| + e^{i\omega t} \langle 1 | \right) ( a +
+a^\dagger) \left( e^{i\omega t} | 1 \rangle + | 0 \rangle \right) \\
+	&= \frac{1}{2} \sqrt{\frac{\hbar}{2m\omega}} \left( e^{-i\omega t}\langle 0
+| a | 1 \rangle + e^{i\omega t} \langle 1 | a^\dagger | 0 \rangle \right) \\
+	&= \frac{1}{2} \sqrt{\frac{\hbar}{2m\omega}} \left( e^{-i\omega t} + e^{i
+\omega t} \right) \\
+	&= \frac{1}{2} \sqrt{\frac{\hbar}{2m\omega}} \cos{\omega t}  
+\end{align*}
+y 
+\begin{align*}
+	\langle \hat p \rangle_{\psi(t)} &= \frac{1}{2} \sqrt{\frac{\hbar m
+\omega}{2}} (-i) \left( \langle 0| + e^{i\omega t} \langle 1| \right) (a -
+a^\dagger) \left( e^{-i\omega t} |1\rangle + |0\rangle \right) \\
+	&= \frac{1}{2} \sqrt{\frac{\hbar m \omega}{2}} (-i) \left( e^{-i\omega
+t}\langle 0 | a | 1 \rangle - e^{i\omega t} \langle 1| a^\dagger | 0 \rangle
+\right) \\
+	&= \sqrt{\frac{\hbar m \omega}{2}} \frac{1}{2i}\left( e^{-i\omega t} -
+e^{i \omega t} \right) \\
+	&= -\sqrt{\frac{\hbar m \omega}{2}} \sin{\omega t}  
+\end{align*}
+
+\item Dada la function d'onda del estado fundamental del oscilador armónico
 unidimenional
 \begin{equation*}
 	\phi_0 (x) = \left(\frac{m\omega}{\pi \hbar}\right)^{\frac{1}{4}} e^{-\frac{1}{2}
 \frac{m\omega}{\hbar} x^2}
 \end{equation*}
-ecuentre l'expresion de $\phi_2(x)$.
-\end{enumerate}
+ecuentre l'expresion de $\phi_2(x)$. \\\\
+\textbf{Solucion:} \\
+Nos podemos escribir el operador escalar $a^\dagger$ en la siguiente forma
+\begin{equation*}
+	a^\dagger = \frac{1}{\sqrt{2\hbar m\omega}}(m \omega \hat x - i \hat p) \quad
+\text{con} \quad a^\dagger | n \rangle = \sqrt{n+1} | n+1 \rangle
+\end{equation*}
+Así
+\begin{equation*}
+	(a^\dagger )^2 | 0 \rangle = \sqrt{1} a^\dagger | 1 \rangle = \sqrt{2} | 2
+\rangle \quad \Rightarrow \qquad | 2\rangle = \frac{1}{\sqrt{2}}(a^\dagger)^2 | 0 \rangle
+\end{equation*}
+y por lo tanto $\phi_2 (x)$ esta dado por
+\begin{equation*}
+	|2\rangle = \phi_2 = \frac{1}{\sqrt{2}} \phi_0.
+\end{equation*}
+Empezando con el operador escalar cuadrado
+\begin{equation*}
+	(a^\dagger )^2 = \frac{1}{2\hbar m \omega} (m \omega \hat x - i \hat p)^2 =
+\frac{1}{2\hbar m \omega} \left(m \omega \hat x - \hbar \frac{\partial}{\partial
+x}\right)^2 = \frac{1}{2\hbar m \omega} \left(m^2 \omega^2 x^2 + \hbar
+\frac{\partial^2}{\partial x^2} - 2 m \omega \hbar x \frac{\partial}{\partial
+x}\right)
+\end{equation*}
+donde hemos utilizado el operador momento $\hat p = - i \hbar \partial/\partial
+x$. Antes de continuar queremos caclular la segunda derivada de 
+\begin{equation*}
+	\frac{\partial^2}{\partial x^2} \left(e^{-\frac{1}{2} \frac{m\omega}{\hbar}
+x^2}\right) = \frac{\partial}{\partial x} \left(\frac{m \omega}{\hbar} x \right)
+e^{-\frac{1}{2} \frac{m\omega}{\hbar} x^2} = \left(-\frac{m\omega}{\hbar} +
+\frac{m^2\omega^2}{\hbar^2}x^2\right) e^{-\frac{1}{2}\frac{m\omega}{\hbar} x^2}
+\end{equation*}
+Por lo tanto $\phi_2$ esta dado por
+\begin{align*}
+	\phi_2 &= \frac{1}{\sqrt{2}} \frac{1}{2 \hbar m \omega}
+\left(\frac{m\omega}{\pi\hbar}\right)^{\frac{1}{4}} \left(m^2 \omega^2 x^2 +
+\hbar^2 \frac{\partial^2}{\partial x^2} - 2m\omega\hbar x
+\frac{\partial}{\partial x} \right) e^{\frac{1}{2} \frac{m\omega}{\hbar}x^2} \\
+	&= \frac{1}{\sqrt{2}} \frac{1}{2\hbar m\omega}
+\left(\frac{m\omega}{\pi\hbar}\right)^{\frac{1}{4}} \left(m^2 \omega^2 x^2 + 2
+m^2 \omega^2 x^2 - m \omega \hbar + m \omega \hbar + m^2 \omega^2 x^2 \right)
+e^{\frac{1}{2} \frac{m \omega}{\hbar} x^2} \\
+	&= \left(\frac{m\omega}{\pi\hbar}\right)^{\frac{1}{4}}
+\left(-\frac{1}{\sqrt{8}} + \sqrt{2} \frac{m\omega}{\hbar} x^2 \right)
+e^{\frac{1}{2} \frac{m\omega}{\hbar} x^2}
+\end{align*}
 
+\end{enumerate}

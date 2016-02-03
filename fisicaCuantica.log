@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.25)  2 FEB 2016 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.25)  3 FEB 2016 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,6 +664,112 @@ y/m/n/10 i[]
 
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ³ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ­ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ³ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ­ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ³ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 169.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 169.
+[5]
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no Â in font cmr7!
+Missing character: There is no   in font cmr7!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no Â in font cmr7!
+Missing character: There is no   in font cmr7!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ³ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--192
+
+ []
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ­ in font cmr10!
+
+Overfull \hbox (94.0708pt too wide) detected at line 212
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )[] = [](\OML/cmm/m/it/10 
+m![] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 i[]\OT1/cmr/m/n/10 )[] = [] [][] = [
+] []
+ []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 212.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 212.
+[6]
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+
+Overfull \hbox (4.43497pt too wide) in paragraph at lines 234--234
+[] 
+ []
+
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
 Package babel Info: Redefining spanish shorthand <<
@@ -690,7 +796,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 25.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 25.
- [5]
+ [7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./fisicaCuantica.aux
 LaTeX Info: Redefining \. on input line 23.
@@ -703,9 +809,9 @@ Package rerunfilecheck Info: File `fisicaCuantica.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
  ) 
 Here is how much of TeX's memory you used:
- 6836 strings out of 493054
- 97062 string characters out of 6134760
- 193707 words of memory out of 5000000
+ 6839 strings out of 493054
+ 97080 string characters out of 6134760
+ 194707 words of memory out of 5000000
  10268 multiletter control sequences out of 15000+600000
  12408 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -727,10 +833,10 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 5/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb>
-Output written on fisicaCuantica.pdf (6 pages, 160523 bytes).
+Output written on fisicaCuantica.pdf (8 pages, 171648 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
