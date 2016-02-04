@@ -233,4 +233,51 @@ e^{\frac{1}{2} \frac{m \omega}{\hbar} x^2} \\
 e^{\frac{1}{2} \frac{m\omega}{\hbar} x^2}
 \end{align*}
 
+\item En la mecánica matricial, qual es el ket $|x =0 \rangle$ que represente un
+oscilador situada exactamente al origen $x=0$? Distinguie entre componentes
+pares y impares. Compara con los resultados de mecánica ondulatòria.
+
+\item Un estado coherente a $t=0$ esta dado por el ket
+$$
+	| \alpha_0 \rangle e^{\frac{1}{2} |\alpha_0|^2} \sum_{n=0}^{\infty}
+	\frac{\alpha_0^n}{\sqrt{n!}} |n\rangle 
+$$
+Ecuentre el ket $|\alpha(t)\rangle$ que da su evolución temporal y comproba que
+satisfará la equación de Schrödinger dependiendo de t. \\\\
+\textbf{Solucion:} \\
+Empezando por lo evolución temporal nos sabemos que los estados del oscilador
+armónico esta dado por
+$$	
+	|n\rangle \overset{t}{\longrightarrow} e^{-i\frac{E_n}{\hbar}t} |n\rangle
+\quad \Rightarrow \qquad |n\rangle \overset{t}{\longrightarrow} e^{i\omega(n +
+\frac{1}{2}) t} |n\rangle
+$$
+Así el evolución temporal de $|\alpha_0\rangle$ esta dado por
+$$
+	|\alpha_0\rangle \overset{t}{\longrightarrow} |\alpha(t) \rangle =
+e^{-\frac{1}{2} |\alpha_0|^2} e^{-\frac{i\omega t}{2}} \sum_{n=0}^{\infty}
+\frac{\alpha_0^n}{\sqrt{n!}} e^{i\omega n t} |n\rangle.
+$$
+Para comprobar el ecuación de Schrödinger
+$$
+	i \hbar \frac{d}{dt} |\alpha(t) \rangle = H | \alpha(t) \rangle
+$$
+necesitamos de recuerdarnos de el operador de número
+$$
+	\hat N | n \rangle = a^\dagger a | n\rangle = n | n \rangle
+$$ 
+Por lo tanto 
+\begin{align*}
+	i \hbar \frac{d}{dt} |\alpha(t) \rangle &= i \hbar
+\frac{d}{dt} \left(e^{-\frac{1}{2} |\alpha_0|^2} e^{-\frac{i \omega t}{2}} \sum_{n=0}^{\infty}
+\frac{\alpha_0^n}{\sqrt{n!}} e^{-i\omega n t} | n\rangle \right) \\
+	&= \frac{\hbar \omega}{2} \underbrace{e^{-\frac{1}{2}|\alpha_0|^2}
+e^{-i\frac{i \omega t}{2}} \sum_{n=0}^\infty \frac{\alpha_0^n}{\sqrt{n!}}
+e^{-i\omega n t} | n\rangle}_{|\alpha(t)\rangle} + \underbrace{\hbar \omega
+e^{-\frac{1}{2} |\alpha_0|} e^{-\frac{i\omega t}{2}} \sum_{n=0}^\infty n
+\frac{\alpha_0^n}{\sqrt{n!}}|n\rangle}_{\hat N | \alpha(t) \rangle}  \\
+	&= \hbar \omega \left(\frac{1}{2} + a^\dagger a \right) |\alpha(t)\rangle = H | \alpha(t) \rangle
+\end{align*}
+
+
 \end{enumerate}
