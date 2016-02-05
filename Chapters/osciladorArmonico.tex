@@ -279,5 +279,136 @@ e^{-\frac{1}{2} |\alpha_0|} e^{-\frac{i\omega t}{2}} \sum_{n=0}^\infty n
 	&= \hbar \omega \left(\frac{1}{2} + a^\dagger a \right) |\alpha(t)\rangle = H | \alpha(t) \rangle
 \end{align*}
 
+\fbox{\begin{minipage}{\textwidth}
+	\item
+	Ultilza la regla de commutación $[a, a^\dagger] = 1$, comprobar que 
+	$$
+		[a, (a^\dagger)^n] = n (a^\dagger)^{n-1} \quad  \text{y} \qquad [a^n,
+	a^\dagger] = n a^{n-1}.
+	$$
+	Ademas con los primeros resultatos justifica los relaciónes
+	$$	
+		[a, f(a^\dagger)] = \frac{d f(a\dagger)}{d a^\dagger} \quad \text{y} \qquad [f(a),
+	a^\dagger] = \frac{d f(a)}{d a}
+	$$
+\end{minipage}} \\
+\textbf{Solucion:} \\
+Para derivar la premiero relación tenemos que utilizar la indución mathematica.
+Empezando por la \textbf{iniciación de la inducción}
+\begin{proof}
+$$
+	[a, (a^\dagger)^n] \overset{n=1}{=} [a, a^\dagger] = 1 \cdot (a^\dagger)^0 =
+1 
+$$
+Ahora por demonstar el \textbf{paso inductive} utilizamos como
+\textbf{hipótesis inductiva} la siguinte relacion
+$$
+	[a, (a^\dagger)^k] = k (a^\dagger)^{k-1}.
+$$
+Por lo tanto tenemos que comprobar que
+$$
+	[a, (a^\dagger)^{k+1}] \overset{!}{=} (k+1) (a^\dagger)^{(k)}
+$$
+Así, utilizando la hipótesis inductiva,
+\begin{align*}
+	[a, a^\dagger (a^\dagger)^k] &= [a, a^\dagger] (a^\dagger)^k + a^\dagger [a,
+(a^\dagger)^k] \\
+	&= (a^\dagger)^k + a^\dagger k (a^\dagger)^{k-1} \\
+	&= (k+1)(a^\dagger)^k \qedhere
+\end{align*}
+\end{proof}
+\begin{proof}
+Por la segunda relación vamos a utilizar el mismo conzepto de indución
+$$
+	[a^n, a^\dagger] \overset{!}{=} n a^{n-1}
+$$
+mathematica. Así la \textbf{iniciación de la inducción} esta dado por
+$$
+	[a^1, a^\dagger] = 1 \cdot a^0 = 1
+$$
+y aplicar la \textbf{hiótesis inductiva} 
+$$
+	[a^k, a^\dagger] = k a^{k-1}
+$$
+danos la comporbación
+\begin{align*}
+	[a^{k+1}, a^\dagger] &\overset{!}{=} (k+1)a^k \\
+	[a^{k+1}, a^\dagger] &= [a^k a, a^\dagger] \\
+	&=	a^k \underbrace{[a, a^\dagger]}_1 + \underbrace{[a^k,
+a^\dagger]}_{ka^{k-1}} a \\
+	&= (k+1)a^k \qedhere
+\end{align*}
+\end{proof}
+\begin{proof}
+Por la tercera relación
+$$
+	[a, f(a^\dagger)] \overset{!}{=} \frac{d f(a\dagger)}{d a^\dagger}
+$$
+tenemos que haver uso de \textbf{serie de Taylor}
+$$
+	f(x) = \sum_{n=0}^\infty \frac{f^(n)}{n!}(x-a)^n
+$$
+Por esto evaluando la funcion del operador $f(a^\dagger)$ a la posición $a=0$
+danos
+$$
+	f(a^\dagger) = \sum_{n=0}^\infty \underbrace{\frac{d^n f(a^\dagger)}{d
+(a^\dagger)^n} \frac{1}{n!}}_{k_n} (a^\dagger)^n \quad \text{y} \qquad \frac{d
+f(a^\dagger)}{d a^\dagger} = \sum_{n=0}^\infty k_n n (a^\dagger)^{n-1}
+$$
+Así que
+$$
+	[a, f(a^\dagger)] = [a, \sum_{n=0}^\infty k_n (a^\dagger)^n ] =
+\sum_{n=0}^\infty k_n [a, (a^\dagger)^n] = \sum_{n=0}^\infty k_n
+n(a^\dagger)^{n-1} \qedhere
+$$
+\end{proof}
+\begin{proof}
+Después de todo por la ultima relación
+$$
+	[f(a), a^\dagger] \overset{!}{=} \sum_{n=0}^\infty \underbrace{\frac{d^n
+f(a)}{d a^n} \frac{1}{n!}}_{k_n} a^n \quad \text{y} \qquad \frac{d f(a)}{da} =
+\sum_{n=0}^\infty k_n n a^{n-1}
+$$
+$$
+	[f(a), a^\dagger] = \sum_{n=0}^\infty k_n [a^n, a^\dagger] =
+\sum_{n=0}^\infty k_n n a^{n-1} = \frac{d f(a)}{da} \qedhere
+$$
+\end{proof}
 
+\fbox{\begin{minipage}{\textwidth}
+	\item	Encuentre los commutatores
+	$$
+		[\hat N, (a^\dagger)^k] \quad \text{y} \qquad [\hat N, a^]	
+	$$
+	Ademas justificar el resultado 
+	$$
+		[\hat N, f(a^\dagger)] = a^\dagger \frac{d f(a^\dagger)}{d a^\dagger}
+	$$
+\end{minipage}}\\\\
+\textbf{Solucion:}\\
+Usando los resultados del ejercicio anterior esta facil calculando los
+resultados de ese problema. En chronologia
+$$
+	[\hat N, (a^\dagger)^k] = [a^\dagger a, (a^\dagger)^k] = a^\dagger
+\underbrace{[a, (a^\dagger)^k]}_{k (a^\dagger)^{n-1}} + \underbrace{[a^\dagger,
+(a^\dagger)^k ]}_{0} a = k (a^\dagger)^k
+$$
+$$
+	[\hat N, a^k] = [a^\dagger a, a^k] = a^\dagger \underbrace{[a, a^k]}_0 +
+\underbrace{[a^\dagger, a^k] a}_{ka^k} = k a^k
+$$
+Y por la relación de la función del operador
+$$
+	[\hat N, f(a^\dagger)] \overset{!}{=} a^\dagger \frac{d f(a^\dagger)}{d
+a^\dagger}
+$$
+$$
+	f(a^\dagger) = \sum_{n=0}^\infty k_n (a^\dagger)^n \quad \text{y} \qquad
+\frac{d f(a^\dagger)}{d a^\dagger} = \sum_{n=0}^\infty k_n n (a^\dagger)^{n-1}
+$$
+$$
+	[\hat N, f(a^\dagger)] = \sum_{n=0}^\infty k_n [\hat N, (a^\dagger)^n] =
+\sum_{n=0}^\infty k_n n (a^\dagger)^n = a^\dagger \frac{d f(a^\dagger)}{d
+(a^\dagger)}
+$$
 \end{enumerate}
