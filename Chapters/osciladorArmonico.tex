@@ -2,413 +2,45 @@
 
 \section{Problemas}
 
-\begin{enumerate}
-
-\item Ecuentra las expressiones del los observables $x$ y $p$ en términos de los
-operadores $a$ y $a^\dagger$ que permiten escribir l'hamiltoniano armónico
-unidimensional como $H = \hbar \omega (a^\dagger a + 1/2)$. Conviene que
-utilizas argumentos d'hermitinidad y dimensional.	\\\\
+\fbox{ \begin{minipage}{\textwidth}
+\textbf{Ejercicio 1:} 
+\begin{itemize}
+	\item Cuanto avanza una onda armónica en un periódo? 
+	\item Cuanto tarda a desplacarse a una distancia igual a la longitud de la
+onda?
+	\item La longitud de una onda de la nota musical LA a la aire es de 0.773 m.
+Cuales son la su frequencia y su longitud de onda en el agua? La velocidad del
+sonido en el aire es 340 m/s y en el agua 1.44 km/s.
+\end{itemize}
+\end{minipage}} \\\\
 \textbf{Solucion:} \\
-Los operadores escalera estan definida por
-\begin{align*}
-	a \,=\, \sqrt{\frac{m\omega}{2 \hbar}} \left( \hat x + \frac{i}{m \omega} \hat p
-\right)	\\
-	a^\dagger \,=\, \sqrt{\frac{m\omega}{2 \hbar}} \left( \hat x - \frac{i}{m \omega}
-\hat p\right)
-\end{align*}
-Así añadiendo y sustraiendo los operadores escalar danos
-\begin{align*}
-	a + a^\dagger \,=\,a \sqrt{\frac{m \omega}{2 \hbar}} ( \hat x + \hat x) &
-\Rightarrow \quad \hat x \,=\, \sqrt{\frac{\hbar }{2 m \omega}} (a + a^\dagger) \\
-	a - a^\dagger \,=\,a \sqrt{\frac{m \omega}{2 \hbar}} \left(\frac{i}{m
-\omega} \hat p + \frac{i}{m \omega} \hat p \right) a \Rightarrow \quad \hat p
-\,=\, \sqrt{\frac{\hbar m \omega}{2}} (-i) (a - a^\dagger)
-\end{align*}
-Ahora vamos a comprobar la dimensionalidad. En general los unidades utilizados
-para los operadores escalares estan
-\begin{align*}
-	m \,=\, kg \quad \omega \,=\, \sqrt{\frac{k}{m}} \,=\, \frac{1}{s} \quad h
-\,=\, \frac{kg \cdot m^2}{s},
-\end{align*}
-porque $h = J\cdot s = N \cdot m \cdot s$ y $k = N / m = kg / s$. Así que la
-comproba de $\hat x$
-\begin{equation*}
-	\hat x \,=\, \sqrt{\frac{h}{m \omega}} \,=\, \sqrt{\frac{kg \cdot m^2}{s} 
-\cdot kg^{-1} \cdot s} \,=\, m
-\end{equation*}
-y de $\hat p$
-\begin{equation*}
-	\hat p \,=\, \sqrt{h m \omega} \,=\, \sqrt{\frac{kg \cdot m^2}{s} \cdot kg
-\cdot s^{-1}} \,=\, \frac{kg \cdot m}{s}
-\end{equation*}
-donde hemos mirado solo términos importantes, estan hecho facilmente.
-
-\item Utilza los operadores escalar $a$ y $a^\dagger$ para calcular los valores
-esperados $\langle x \rangle_n$, $\langle p \rangle_n$, $\langle x^2 \rangle_n$,
-$\langle p^2 \rangle_n$, $\langle K \rangle_n$, $\langle V \rangle_n$ y los
-indeterminaciónes $\langle (\Delta x)^2 \rangle_n$, $\langle(\Delta p)^2\rangle_n$ y
-$\langle(\Delta H)^2\rangle_n$ de el estado
-estacionario $|n\rangle$ de l'oscilador armónico unidimensional. \\\\
-\textbf{Solucion:}\\
-Recuerdando que los vectores del estado estan orthogonales
-\begin{equation*}
-	\langle n | n' \rangle \,=\, \delta_{nn'}
-\end{equation*}
-nos podemos calcular $\langle \hat x \rangle_n$ y $\langle \hat p \rangle_n$
-facilmente 
-\begin{align*}
-	\langle \hat x \rangle_n a= \langle n | \hat x | n \rangle =
-\sqrt{\frac{\hbar}{2m\omega}} \langle n| a^\dagger + a | n \rangle 
-	= \sqrt{\frac{\hbar}{2m\omega}} (\langle n | a^\dagger | \rangle +
-\langle n | a | n \rangle ) \\
-	a = \sqrt{\frac{\hbar}{2m\omega}} (\sqrt{n+1} \langle
-n| n+1\rangle + \sqrt{n} \langle n|n-1\rangle) = 0,\\
-	\langle \hat p \rangle_n a= \sqrt{\frac{\hbar}{2m\omega}} (-i) \langle n |
-(a - a^\dagger) | n \rangle = 0.
-\end{align*}
-Utilizando el operador número $N = a^\dagger a$ y el commutador de los
-operadores escalar
-\begin{equation*}
-	[a, a^\dagger] = aa^\dagger - a^\dagger a = 1 \quad \Rightarrow \qquad a
-a^\dagger = a^\dagger a + 1 = \hat N + 1	
-\end{equation*}
-danos las valores esperados de $\langle \hat x^2 \rangle_n$ y $\langle \hat p^2
-\rangle_n$
-\begin{align*}
-	\langle \hat x^2 \rangle_n a= \langle n | \hat x^2 | n \rangle =
-\frac{\hbar}{2m\omega} (\langle n | \cancel{a^\dagger a^\dagger} +
-\underbrace{a^\dagger a}_{\hat N} + \underbrace{aa^\dagger}_{\hat N + 1} +
-\cancel{aa} | n\rangle  \\
-	a= \frac{\hbar}{2m\omega} (\langle n | 2 \hat N + 1 | n \rangle =
-\frac{\hbar}{2m\omega} (2n +1) = \frac{\hbar}{m\omega}
-\left(n+\frac{1}{2}\right) \\
-	\langle \hat p^2 \rangle_n a= -\frac{\hbar m \omega}{2} [-(2n +1] =
-\frac{\hbar m \omega}{2} (2n + 1) = \hbar m \omega (n + \frac{1}{2}).	
-\end{align*}
-Los valores esperados kintetico $\langle K \rangle_n$ y potencial $\langle V
-\rangle_n$ estan compuesto de los valores esperados calculado antes, por lo
-tanto nos podemos escribir
-\begin{align*}
-	\langle K \rangle_n a= \frac{1}{2m} \langle \hat p^2 \rangle_n \frac{\hbar
-\omega}{2} \left( n \frac{1}{2} \right) \\
-	\langle V \rangle_n a=  \frac{1}{2} m \omega^2 \langle x^2 \rangle_n =
-\frac{1}{2} \hbar \omega \left( n + \frac{1}{2} \right)
-\end{align*}
-Por esto $\langle H \rangle_n$  esta dado por
-\begin{equation*}
-	\langle H \rangle_n = \langle K \rangle_n + \langle V \rangle_n = \hbar
-\omega \left( n + \frac{1}{2} \right).
-\end{equation*}
-Por los indeterminaviones nos recuerdamos de la relación de indeterminación
-\begin{equation*}
-	\Delta A \equiv A - \langle A \rangle \quad \Rightarrow \qquad \langle
-(\Delta A)^2 \rangle = \langle A^2 \rangle - \langle A \rangle^2
-\end{equation*}
-Así los indeterminaciones estan dado por
-\begin{align*}
-	\langle (\Delta x)^2 \rangle_n a= \langle x^2 \rangle_n -
-\underbrace{\langle x \rangle_n}_0 = \frac{\hbar}{m\omega} \left( n +
-\frac{1}{2}\right) \\
-	\langle (\Delta p)^2 \rangle_n a= \langle p^2 \rangle_n -
-\underbrace{\langle p \rangle_n}_0 = \hbar m \omega \left(n + \frac{1}{2}
-\right) \\
-	\langle (\Delta H)^2 \rangle_n = \langle H^2 \rangle_n - \langle H
-\rangle_n^2 = 0
-\end{align*}
-El ultimo realción esta verdad porque dando un Hamiltoniano armónico
-\begin{equation*}
-	H = \frac{1}{2m} p^2 + \frac{1}{2} m \omega^2 x^2 \quad \Rightarrow \qquad
-H^2 = \frac{1}{4m^2} \underbrace{p^4}_{(a-a^\dagger)^4} + \frac{1}{4} m^2
-\omega^2 \underbrace{x^4}_{(a+a^\dagger)^4}
-\end{equation*}
-así considerado solo $x^4$
-\begin{equation*}
-	\langle x^4 \rangle_n = \langle n |(a+a^\dagger)^4 | n \rangle = \langle n |(\cancel{aa} + aa^\dagger + a^\dagger a + \cancel{a^\dagger
-a^\dagger})^2 | n \rangle = \langle n |(aa^\dagger + a^\dagger a)^2 | n \rangle
-= \langle n | ( a a^\dagger + a^\dagger a) | n \rangle^2  
-\end{equation*}
-repitiendo el mismo processo por $p^4$ danos como resultado
-\begin{equation*}
-	\langle H^2 \rangle_n = \langle H \rangle_n^2
-\end{equation*}
-por lo tanto vemos que la indeterminacion del Hamiltoniano esta cero.
-
-\item por el estado no estacionario inicial (y sencillo) $|\psi(t=0)\rangle =
-\frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}} | 1 \rangle$ y cualquier
-instant de tiempo t. \\\\
-\textbf{Solucion:} \\
-Primero tenemos que evaluar la evolución del tiempo del estado no esacionario
-inicial. Por lo tanto deberiamos calcular la energía del oscillador armónico
-del estado fundamental y primero estado
-\begin{equation*}
-	E_n = \hbar \omega (n + \frac{1}{2}), \quad E_0 = \frac{\hbar \omega}{2}
-,\quad E_1 = \frac{3 \hbar \omega}{2}.
-\end{equation*}
-Así utilizando
-\begin{equation*}
-	|\alpha (t)\rangle = \sum_n \alpha_n e^{-i\frac{E_n}{\hbar} t} | n\rangle
-\end{equation*}
-danos la evolución temporal de $|\psi(t=0)\rangle$ 
-\begin{equation*}
-	|\psi(t)\rangle = \frac{1}{\sqrt{2}} e^{-\frac{i\omega}{2}}|0\rangle
-+ \frac{1}{\sqrt{2}} e^{-\frac{3 i \omega t}{2}} |1 \rangle  = \frac{1}{\sqrt{2}}
-e^{-\frac{i\omega t}{2}} \left( |0\rangle + e^{\frac{i \omega t}{2}} |
-2\rangle \right)
-\end{equation*}
-Logicamente por los valores eseperados nos tenemos
-\begin{align*}
-	\langle \hat x \rangle_{\psi(t)} &= \langle \psi | \hat x | \psi \rangle \\
-	&= \frac{1}{2} \cancel{e^{\frac{- i \omega t}{2}}e^{\frac{i \omega t}{2}}}
-\frac{\hbar}{2m\omega} \left( \langle 0| + e^{i\omega t} \langle 1 | \right) ( a +
-a^\dagger) \left( e^{i\omega t} | 1 \rangle + | 0 \rangle \right) \\
-	&= \frac{1}{2} \sqrt{\frac{\hbar}{2m\omega}} \left( e^{-i\omega t}\langle 0
-| a | 1 \rangle + e^{i\omega t} \langle 1 | a^\dagger | 0 \rangle \right) \\
-	&= \frac{1}{2} \sqrt{\frac{\hbar}{2m\omega}} \left( e^{-i\omega t} + e^{i
-\omega t} \right) \\
-	&= \frac{1}{2} \sqrt{\frac{\hbar}{2m\omega}} \cos{\omega t}  
-\end{align*}
-y 
-\begin{align*}
-	\langle \hat p \rangle_{\psi(t)} &= \frac{1}{2} \sqrt{\frac{\hbar m
-\omega}{2}} (-i) \left( \langle 0| + e^{i\omega t} \langle 1| \right) (a -
-a^\dagger) \left( e^{-i\omega t} |1\rangle + |0\rangle \right) \\
-	&= \frac{1}{2} \sqrt{\frac{\hbar m \omega}{2}} (-i) \left( e^{-i\omega
-t}\langle 0 | a | 1 \rangle - e^{i\omega t} \langle 1| a^\dagger | 0 \rangle
-\right) \\
-	&= \sqrt{\frac{\hbar m \omega}{2}} \frac{1}{2i}\left( e^{-i\omega t} -
-e^{i \omega t} \right) \\
-	&= -\sqrt{\frac{\hbar m \omega}{2}} \sin{\omega t}  
-\end{align*}
-
-\item Dada la function d'onda del estado fundamental del oscilador armónico
-unidimenional
-\begin{equation*}
-	\phi_0 (x) = \left(\frac{m\omega}{\pi \hbar}\right)^{\frac{1}{4}} e^{-\frac{1}{2}
-\frac{m\omega}{\hbar} x^2}
-\end{equation*}
-ecuentre l'expresion de $\phi_2(x)$. \\\\
-\textbf{Solucion:} \\
-Nos podemos escribir el operador escalar $a^\dagger$ en la siguiente forma
-\begin{equation*}
-	a^\dagger = \frac{1}{\sqrt{2\hbar m\omega}}(m \omega \hat x - i \hat p) \quad
-\text{con} \quad a^\dagger | n \rangle = \sqrt{n+1} | n+1 \rangle
-\end{equation*}
-Así
-\begin{equation*}
-	(a^\dagger )^2 | 0 \rangle = \sqrt{1} a^\dagger | 1 \rangle = \sqrt{2} | 2
-\rangle \quad \Rightarrow \qquad | 2\rangle = \frac{1}{\sqrt{2}}(a^\dagger)^2 | 0 \rangle
-\end{equation*}
-y por lo tanto $\phi_2 (x)$ esta dado por
-\begin{equation*}
-	|2\rangle = \phi_2 = \frac{1}{\sqrt{2}} \phi_0.
-\end{equation*}
-Empezando con el operador escalar cuadrado
-\begin{equation*}
-	(a^\dagger )^2 = \frac{1}{2\hbar m \omega} (m \omega \hat x - i \hat p)^2 =
-\frac{1}{2\hbar m \omega} \left(m \omega \hat x - \hbar \frac{\partial}{\partial
-x}\right)^2 = \frac{1}{2\hbar m \omega} \left(m^2 \omega^2 x^2 + \hbar
-\frac{\partial^2}{\partial x^2} - 2 m \omega \hbar x \frac{\partial}{\partial
-x}\right)
-\end{equation*}
-donde hemos utilizado el operador momento $\hat p = - i \hbar \partial/\partial
-x$. Antes de continuar queremos caclular la segunda derivada de 
-\begin{equation*}
-	\frac{\partial^2}{\partial x^2} \left(e^{-\frac{1}{2} \frac{m\omega}{\hbar}
-x^2}\right) = \frac{\partial}{\partial x} \left(\frac{m \omega}{\hbar} x \right)
-e^{-\frac{1}{2} \frac{m\omega}{\hbar} x^2} = \left(-\frac{m\omega}{\hbar} +
-\frac{m^2\omega^2}{\hbar^2}x^2\right) e^{-\frac{1}{2}\frac{m\omega}{\hbar} x^2}
-\end{equation*}
-Por lo tanto $\phi_2$ esta dado por
-\begin{align*}
-	\phi_2 &= \frac{1}{\sqrt{2}} \frac{1}{2 \hbar m \omega}
-\left(\frac{m\omega}{\pi\hbar}\right)^{\frac{1}{4}} \left(m^2 \omega^2 x^2 +
-\hbar^2 \frac{\partial^2}{\partial x^2} - 2m\omega\hbar x
-\frac{\partial}{\partial x} \right) e^{\frac{1}{2} \frac{m\omega}{\hbar}x^2} \\
-	&= \frac{1}{\sqrt{2}} \frac{1}{2\hbar m\omega}
-\left(\frac{m\omega}{\pi\hbar}\right)^{\frac{1}{4}} \left(m^2 \omega^2 x^2 + 2
-m^2 \omega^2 x^2 - m \omega \hbar + m \omega \hbar + m^2 \omega^2 x^2 \right)
-e^{\frac{1}{2} \frac{m \omega}{\hbar} x^2} \\
-	&= \left(\frac{m\omega}{\pi\hbar}\right)^{\frac{1}{4}}
-\left(-\frac{1}{\sqrt{8}} + \sqrt{2} \frac{m\omega}{\hbar} x^2 \right)
-e^{\frac{1}{2} \frac{m\omega}{\hbar} x^2}
-\end{align*}
-
-\item En la mecánica matricial, qual es el ket $|x =0 \rangle$ que represente un
-oscilador situada exactamente al origen $x=0$? Distinguie entre componentes
-pares y impares. Compara con los resultados de mecánica ondulatòria.
-
-\item Un estado coherente a $t=0$ esta dado por el ket
-$$
-	| \alpha_0 \rangle e^{\frac{1}{2} |\alpha_0|^2} \sum_{n=0}^{\infty}
-	\frac{\alpha_0^n}{\sqrt{n!}} |n\rangle 
-$$
-Ecuentre el ket $|\alpha(t)\rangle$ que da su evolución temporal y comproba que
-satisfará la equación de Schrödinger dependiendo de t. \\\\
-\textbf{Solucion:} \\
-Empezando por lo evolución temporal nos sabemos que los estados del oscilador
-armónico esta dado por
-$$	
-	|n\rangle \overset{t}{\longrightarrow} e^{-i\frac{E_n}{\hbar}t} |n\rangle
-\quad \Rightarrow \qquad |n\rangle \overset{t}{\longrightarrow} e^{i\omega(n +
-\frac{1}{2}) t} |n\rangle
-$$
-Así el evolución temporal de $|\alpha_0\rangle$ esta dado por
-$$
-	|\alpha_0\rangle \overset{t}{\longrightarrow} |\alpha(t) \rangle =
-e^{-\frac{1}{2} |\alpha_0|^2} e^{-\frac{i\omega t}{2}} \sum_{n=0}^{\infty}
-\frac{\alpha_0^n}{\sqrt{n!}} e^{i\omega n t} |n\rangle.
-$$
-Para comprobar el ecuación de Schrödinger
-$$
-	i \hbar \frac{d}{dt} |\alpha(t) \rangle = H | \alpha(t) \rangle
-$$
-necesitamos de recuerdarnos de el operador de número
-$$
-	\hat N | n \rangle = a^\dagger a | n\rangle = n | n \rangle
-$$ 
-Por lo tanto 
-\begin{align*}
-	i \hbar \frac{d}{dt} |\alpha(t) \rangle &= i \hbar
-\frac{d}{dt} \left(e^{-\frac{1}{2} |\alpha_0|^2} e^{-\frac{i \omega t}{2}} \sum_{n=0}^{\infty}
-\frac{\alpha_0^n}{\sqrt{n!}} e^{-i\omega n t} | n\rangle \right) \\
-	&= \frac{\hbar \omega}{2} \underbrace{e^{-\frac{1}{2}|\alpha_0|^2}
-e^{-i\frac{i \omega t}{2}} \sum_{n=0}^\infty \frac{\alpha_0^n}{\sqrt{n!}}
-e^{-i\omega n t} | n\rangle}_{|\alpha(t)\rangle} + \underbrace{\hbar \omega
-e^{-\frac{1}{2} |\alpha_0|} e^{-\frac{i\omega t}{2}} \sum_{n=0}^\infty n
-\frac{\alpha_0^n}{\sqrt{n!}}|n\rangle}_{\hat N | \alpha(t) \rangle}  \\
-	&= \hbar \omega \left(\frac{1}{2} + a^\dagger a \right) |\alpha(t)\rangle = H | \alpha(t) \rangle
-\end{align*}
-
-\fbox{\begin{minipage}{\textwidth}
-	\item
-	Ultilza la regla de commutación $[a, a^\dagger] = 1$, comprobar que 
+\begin{itemize}
+	\item Una onda avanza una distancia de una longitud de una onda
+\textbf{$\lambda$} en una periodo \textbf{$T$}. 
 	$$
-		[a, (a^\dagger)^n] = n (a^\dagger)^{n-1} \quad  \text{y} \qquad [a^n,
-	a^\dagger] = n a^{n-1}.
+		v_{onda} = \frac{s}{T} = \lambda \cdot f = \lambda \cdot \frac{1}{T}  \quad
+\Rightarrow \qquad s = \lambda
 	$$
-	Ademas con los primeros resultatos justifica los relaciónes
-	$$	
-		[a, f(a^\dagger)] = \frac{d f(a\dagger)}{d a^\dagger} \quad \text{y} \qquad [f(a),
-	a^\dagger] = \frac{d f(a)}{d a}
+	\item Igual que antes: \textbf{T}.
+	\item Primero queremos encontrar a la frequencia del aire $f_{aire}$, que
+esta dado por
 	$$
-\end{minipage}} \\
-\textbf{Solucion:} \\
-Para derivar la premiero relación tenemos que utilizar la indución mathematica.
-Empezando por la \textbf{iniciación de la inducción}
-\begin{proof}
-$$
-	[a, (a^\dagger)^n] \overset{n=1}{=} [a, a^\dagger] = 1 \cdot (a^\dagger)^0 =
-1 
-$$
-Ahora por demonstar el \textbf{paso inductive} utilizamos como
-\textbf{hipótesis inductiva} la siguinte relacion
-$$
-	[a, (a^\dagger)^k] = k (a^\dagger)^{k-1}.
-$$
-Por lo tanto tenemos que comprobar que
-$$
-	[a, (a^\dagger)^{k+1}] \overset{!}{=} (k+1) (a^\dagger)^{(k)}
-$$
-Así, utilizando la hipótesis inductiva,
-\begin{align*}
-	[a, a^\dagger (a^\dagger)^k] &= [a, a^\dagger] (a^\dagger)^k + a^\dagger [a,
-(a^\dagger)^k] \\
-	&= (a^\dagger)^k + a^\dagger k (a^\dagger)^{k-1} \\
-	&= (k+1)(a^\dagger)^k \qedhere
-\end{align*}
-\end{proof}
-\begin{proof}
-Por la segunda relación vamos a utilizar el mismo conzepto de indución
-$$
-	[a^n, a^\dagger] \overset{!}{=} n a^{n-1}
-$$
-mathematica. Así la \textbf{iniciación de la inducción} esta dado por
-$$
-	[a^1, a^\dagger] = 1 \cdot a^0 = 1
-$$
-y aplicar la \textbf{hiótesis inductiva} 
-$$
-	[a^k, a^\dagger] = k a^{k-1}
-$$
-danos la comporbación
-\begin{align*}
-	[a^{k+1}, a^\dagger] &\overset{!}{=} (k+1)a^k \\
-	[a^{k+1}, a^\dagger] &= [a^k a, a^\dagger] \\
-	&=	a^k \underbrace{[a, a^\dagger]}_1 + \underbrace{[a^k,
-a^\dagger]}_{ka^{k-1}} a \\
-	&= (k+1)a^k \qedhere
-\end{align*}
-\end{proof}
-\begin{proof}
-Por la tercera relación
-$$
-	[a, f(a^\dagger)] \overset{!}{=} \frac{d f(a\dagger)}{d a^\dagger}
-$$
-tenemos que haver uso de \textbf{serie de Taylor}
-$$
-	f(x) = \sum_{n=0}^\infty \frac{f^(n)}{n!}(x-a)^n
-$$
-Por esto evaluando la funcion del operador $f(a^\dagger)$ a la posición $a=0$
-danos
-$$
-	f(a^\dagger) = \sum_{n=0}^\infty \underbrace{\frac{d^n f(a^\dagger)}{d
-(a^\dagger)^n} \frac{1}{n!}}_{k_n} (a^\dagger)^n \quad \text{y} \qquad \frac{d
-f(a^\dagger)}{d a^\dagger} = \sum_{n=0}^\infty k_n n (a^\dagger)^{n-1}
-$$
-Así que
-$$
-	[a, f(a^\dagger)] = [a, \sum_{n=0}^\infty k_n (a^\dagger)^n ] =
-\sum_{n=0}^\infty k_n [a, (a^\dagger)^n] = \sum_{n=0}^\infty k_n
-n(a^\dagger)^{n-1} \qedhere
-$$
-\end{proof}
-\begin{proof}
-Después de todo por la ultima relación
-$$
-	[f(a), a^\dagger] \overset{!}{=} \sum_{n=0}^\infty \underbrace{\frac{d^n
-f(a)}{d a^n} \frac{1}{n!}}_{k_n} a^n \quad \text{y} \qquad \frac{d f(a)}{da} =
-\sum_{n=0}^\infty k_n n a^{n-1}
-$$
-$$
-	[f(a), a^\dagger] = \sum_{n=0}^\infty k_n [a^n, a^\dagger] =
-\sum_{n=0}^\infty k_n n a^{n-1} = \frac{d f(a)}{da} \qedhere
-$$
-\end{proof}
+		\lambda_{aire} = \frac{v_{aire}}{f_{aire}} \quad \Rightarrow \qquad f_{aire} =
+\frac{v_{aire}}{\lambda_{aire}} = \frac{340 m/s}{0,773m} \approx 440 Hz
+	$$
+	Por los dos medias (aire y agua) la frequencia es el mismo
+	$$
+		f_{aire} = f_{agua}
+	$$
+	por eso podemos calcular la longitud de la onda de la onda en el agua
+	$$
+		\lambda_{agua} = \frac{v_{agua}}{f_{agua}} = \frac{1440 m/s}{440 s}
+\approx 3,27 m
+	$$
+\end{itemize}
 
-\fbox{\begin{minipage}{\textwidth}
-	\item	Encuentre los commutatores
-	$$
-		[\hat N, (a^\dagger)^k] \quad \text{y} \qquad [\hat N, a^]	
-	$$
-	Ademas justificar el resultado 
-	$$
-		[\hat N, f(a^\dagger)] = a^\dagger \frac{d f(a^\dagger)}{d a^\dagger}
-	$$
-\end{minipage}}\\\\
-\textbf{Solucion:}\\
-Usando los resultados del ejercicio anterior esta facil calculando los
-resultados de ese problema. En chronologia
-$$
-	[\hat N, (a^\dagger)^k] = [a^\dagger a, (a^\dagger)^k] = a^\dagger
-\underbrace{[a, (a^\dagger)^k]}_{k (a^\dagger)^{n-1}} + \underbrace{[a^\dagger,
-(a^\dagger)^k ]}_{0} a = k (a^\dagger)^k
-$$
-$$
-	[\hat N, a^k] = [a^\dagger a, a^k] = a^\dagger \underbrace{[a, a^k]}_0 +
-\underbrace{[a^\dagger, a^k] a}_{ka^k} = k a^k
-$$
-Y por la relación de la función del operador
-$$
-	[\hat N, f(a^\dagger)] \overset{!}{=} a^\dagger \frac{d f(a^\dagger)}{d
-a^\dagger}
-$$
-$$
-	f(a^\dagger) = \sum_{n=0}^\infty k_n (a^\dagger)^n \quad \text{y} \qquad
-\frac{d f(a^\dagger)}{d a^\dagger} = \sum_{n=0}^\infty k_n n (a^\dagger)^{n-1}
-$$
-$$
-	[\hat N, f(a^\dagger)] = \sum_{n=0}^\infty k_n [\hat N, (a^\dagger)^n] =
-\sum_{n=0}^\infty k_n n (a^\dagger)^n = a^\dagger \frac{d f(a^\dagger)}{d
-(a^\dagger)}
-$$
-\end{enumerate}
+
+
+
+
+
