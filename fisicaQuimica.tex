@@ -10,6 +10,12 @@
 
 \renewcommand{\vec}[1]{\mathbf{#1}}
 
+\newsavebox{\mybox}
+\newenvironment{ejercicio}
+{\begin{lrbox}{\mybox}\begin{minipage}{0.9\textwidth}}
+{\end{minipage}\end{lrbox}\fbox{\usebox{\mybox}} \\\\
+\textbf{Solucion :} \\}
+
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
 
