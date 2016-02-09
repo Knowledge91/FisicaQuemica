@@ -122,3 +122,57 @@ tenemos la frecuencia
 \frac{1}{\pi} cm / s = 0,318 cm /s
 	$$
 \end{itemize}
+\rule{\textwidth}{1px}
+% ----------------------------------------------------------------------------- 
+\begin{ejercicio}
+\textbf{Ejercicio 5: Ondas sísmicas} En los terremotos hay quatro tipos de
+ondas: dos de volumen y (ondas S y P) y dos ondas de superficie. Los velocidades
+respectivas de las ondas P (primarias) y S (secundarias) valen
+$$
+	v_P = \sqrt{\frac{B+4M_c/3}{\rho}}, \quad v_s = \sqrt{\frac{M_c}{\rho}} 
+$$
+donde B es el modul de compressibilidad y $M_c$ el modul de cizallamiento.
+\begin{itemize}
+	\item Un material geolocigo tiene los siguientes modulos $B=6,3\times10^10
+N/m^2$ y $M_c = 2,7 \times 10^10 N/m^2$, y una densidad de $3 g/cm^3$. Evaluar
+los velocidaded de los ondas $P$ y $S$ en este medio.
+	\item Una estación sismografica detecta llegada de la onda $P$ de un sismo a
+las 0:15:23 y la llegada de la onda $S$ a las 0:17:53, A que distancia de la
+estación ha producido el focus (hipocentre) del sismo si el medio que separa el
+hipocentro del estación esta compuesto por el material de la parte anterior de
+esa ejercicio.
+\end{itemize}
+\end{ejercicio}
+\begin{itemize}
+	\item
+	Para solver el primer parte de ese ejercicio simplemente necesitamos de
+	sustituir los numerós dado en los formulares de la veclocidad y cuidar de los
+	unidades. 
+	\begin{align*}
+		3 g/cm^3 = \frac{0,003}{0,01^3} kg/m^3 = 3000 kg / m^3 \\
+		v_P = \sqrt{\frac{B + \frac{4}{3} M_c}{\rho}} = \sqrt{\frac{6,3\times10^10
+	N/m^2 + \frac{4}{3} \cdot 2,7 \times 10^10 N/m^2}{3000 kg/m^3}} = 5744,56 m/s  =
+	5,74 km/s \\
+		v_S = \sqrt{\frac{M_c}{\rho}} = \sqrt{\frac{2,7\times10^10 N/m^2}{3000
+	kg/m^3}} = 3000 m/s = 3 km/s 
+	\end{align*}
+
+	\item
+	Para el segundo parte estan dado dos tiempos, el uno para la lleggada de la
+primer onda P (que esta mas rapido) y de la llegada de la segunda onda S, pero
+no el tiempo \textbf{inicial!} de el terremotos. Entonces para tenemos que
+encontrar una solucion que includa la differencia de los tiempos $\Delta t_{ps}$
+	$$
+		\Delta t_{ps} = t_s - t_p = 0:17:53 - 0:15:23 = 1073 - 923 = 150
+	$$
+	Las distancia que los ondas transladan estan iguales. Por lo tanto tenemos 
+	$$
+		s_P = s_S \quad \Rightarrow \quad v_P t_P = v_S t_S = v_S (t_p + \Delta
+t_{PS}) \quad \Rightarrow \quad t_P = \frac{v_S \Delta t_{PS}}{v_P - v_S}
+	$$
+	Asi tambien tenemos la distancia del terromoto
+	$$	
+		s_P = v_p t_P = 5,74 km/s \cdot \frac{3 km/s \cdot 150}{5,74 km/s \cdot
+- 3 km/s} \approx 943 km
+	$$
+\end{itemize}
