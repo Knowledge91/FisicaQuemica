@@ -176,3 +176,47 @@ t_{PS}) \quad \Rightarrow \quad t_P = \frac{v_S \Delta t_{PS}}{v_P - v_S}
 - 3 km/s} \approx 943 km
 	$$
 \end{itemize}
+\rule{\textwidth}{1px}
+\begin{ejercicio}
+	Un sistema de acústico público esta ajustado a un nivel de $70 dB$ por
+oyentes a $10 m$ de distància. Cual es el nivel de intensidad a $50 m$ de
+distancia? Cual vale la intensidad correspondiente?
+\end{ejercicio}
+Para emezar queremos que calcular el nivel de intensitat por una distancia de
+$10m$. Asi necesitamos la relacion por el nivel de intensidad (escala
+decibélica)
+$$
+	\beta = 10 \log \frac{I}{I_0} \quad \Rightarrow \quad I = I_0
+10^{\frac{\beta}{10}}
+$$
+Come intensidad reverencia usamos la umbral de audición
+$$
+	I_0 = 10^{-12} W/m^2
+$$
+Por eso la intensidad por $10m$ de distancia esta dado por
+$$
+	I(10m) = 10^{-12} \cdot 10^7 W/m^2 = 10^{-5} W/m^2
+$$
+Ahora, para calcular el nivel de intensidad de una distancia de $50m $
+necesitamos una relacion dependende de la distancia por nuestro intensidad.
+Si una fuente puntual emite igual de ondas en todas direcciones, la ernegía a
+una distncia $r$ estará distribuida uniformemente sobre toda la superficie
+esférica correspondiente. De hecho
+$$
+	I = \frac{P}{4 \pi r^2} 
+$$
+Si tratoms la intensidad de $10m$ como $I_1$ y la intensidad de $50m$ como $I_2$
+la relacion esta dado por
+\begin{align*}
+	I_1 = \frac{P_1}{4 \pi r_1^2}, \quad \Rightarrow \quad P_1 = I_1 4\pi r_1^2
+\\
+	I_2 = \frac{P_1}{4 \pi r_2^2}, \quad \Rightarrow \quad I_2 = \frac{I_1
+r_1^2}{r_2^2} \cancel{\frac{4 \pi}{4 \pi}} = 10^{-5} W/m^2 \frac{10^2 m^2}{50 m^2} =
+4\cdot 10^{-7} W/m^2
+\end{align*}
+Por lo tanto el nivel de intensidad esta dado por
+$$
+	\beta = 10 \log \frac{I}{I_0} = 10 \log \frac{4 \cdot 10^{-7}
+W/m^2}{10^{-12}W/m^2} \approx 56 dB
+$$
+
